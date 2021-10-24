@@ -15,25 +15,45 @@
 </head>
 <body>
     
-    <main class="container-fluid p-0 main-container">
+    <main class="container-fluid p-0 m-0 main-container">
         
         <header class="header-section">
             <div class="profile-section">
-                <ion-icon class="book-icon" name="book-outline"></ion-icon>
+                <ion-icon class="book-icon m-2" name="book-outline"></ion-icon>
                 <span class="profile-name">Dictionary Application</span>
             </div>
 
             <nav class="nav-section">
-                <ul class="nav-list">
-                    <li class="nav-link"><a href="index.html">Home</a></li>
-                    <li class="nav-link"><a href="stats.html">Stats</a></li>
-                    <li class="nav-link"><a href="settings.html">Settings</a></li>
+                <ul class="nav-list d-sm-flex align-items-center">
+                    <li class="nav-link d-none d-md-inline"><a href="index.html">Home</a></li>
+                    <li class="nav-link d-none d-md-inline"><a href="stats.html">Stats</a></li>
+                    <li class="nav-link d-none d-md-inline"><a href="settings.html">Settings</a></li>
+                    <li class="nav-link d-block d-md-none mt-3">
+                        <a href="settings.html">
+                            <div class="dropdown-section d-md-none">
+                                <ion-icon name="menu-sharp" class="fs-1"></ion-icon>
+                                <ul class="nav-list d-none flex-column">
+                                    <li class="nav-link"><a href="index.html">Home</a></li>
+                                    <li class="nav-link"><a href="stats.html">Stats</a></li>
+                                    <li class="nav-link"><a href="settings.html">Settings</a></li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
                 </ul>
+                <!-- <div class="dropdown-section">
+                    <ion-icon name="menu-sharp"></ion-icon>
+                    <ul class="nav-list d-none flex-column">
+                        <li class="nav-link"><a href="index.html">Home</a></li>
+                        <li class="nav-link"><a href="stats.html">Stats</a></li>
+                        <li class="nav-link"><a href="settings.html">Settings</a></li>
+                    </ul>
+                </div> -->
             </nav>
         </header>
 
-        <section>
-            <aside class="left-aside col-4">
+        <section class="d-block d-md-flex flex-row">
+            <aside class="left-aside col-sm-4 col-md-4">
                 <span class="search-title">Looking for a definiton? <br/> Search below <ion-icon name="arrow-down-outline"></ion-icon></span>
                 <div class="search-section">
                     <ion-icon name="search-outline"></ion-icon>
@@ -45,7 +65,7 @@
                 </div>
             </aside>
 
-            <aside class="right-aside col-7 p-5 overflow-auto" data-right-side>
+            <aside class="right-aside col-sm-7 col-md-7 p-5 overflow-auto" data-right-side>
                     <span class="searched-word" data-word>Hello</span>
                     <div class="pronunciation-wrap">
                         <span class="phonetic-spelling" data-phonetic-spelling>/he'lou/</span>
@@ -71,7 +91,7 @@
                 <ion-icon class="fs-1 mx-3" name="settings"></ion-icon>
             </div>
 
-            <div class="row mt-4">
+            <div class="row mt-4 d-none d-sm-flex">
                 <div class="col-3 d-flex justify-content-center mt-2">
                     <ul class="footer-link-ul p-3 text-center">
                         <li class="footer-link mb-4"><a href="#">Journals</a></li>
